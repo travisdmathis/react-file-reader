@@ -1,0 +1,25 @@
+{
+  "name": "uuid4",
+  "version": "1.0.0",
+  "description": "Node UUID v4 Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tracker1/node-uuid4.git"
+  },
+  "keywords": [
+    "node",
+    "uuid-v4",
+    "uuid",
+    "guid"
+  ],
+  "author": "Michael J. Ryan <tracker1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tracker1/node-uuid4/issues"
+  },
+  "homepage": "https://github.com/tracker1/node-uuid4"
+}
