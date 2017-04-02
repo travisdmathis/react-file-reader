@@ -54,6 +54,13 @@ export default class ReactFileReader extends React.Component {
   }
 
   render() {
+    hideInput = {
+      width: '0px',
+      opacity: '0px',
+      position: 'fixed',
+      left: '-99999999px',
+    }
+
     return(
       <div className='react-file-reader'>
         <input type='file'
@@ -62,6 +69,7 @@ export default class ReactFileReader extends React.Component {
           className='react-file-reader-input'
           id={this.state.elementId}
           multiple={this.props.multipleFiles}
+          style={hideInput}
         />
 
         <div className='react-file-reader-button' onClick={this.clickInput}>
