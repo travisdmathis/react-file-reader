@@ -26,7 +26,7 @@ export default class ReactFileReader extends React.Component {
 
     if (this.props.multipleFiles) {
       let files = [];
-
+      console.log('files', files)
       for (var i = 0, len = ef.length; i < len; i++) {
         let reader = new FileReader();
         let f = ef[i];
