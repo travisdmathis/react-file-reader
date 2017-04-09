@@ -43,7 +43,7 @@ var ReactFileReader = function (_React$Component) {
 
       element.click();
     }, _this.handleFiles = function (event) {
-      if (_this.props.outputFormat === 'base64') {
+      if (_this.props.base64) {
         _this.convertFilesToBase64(event.target.files);
       } else {
         _this.props.handleFiles(event.target.files);
@@ -128,13 +128,13 @@ exports.default = ReactFileReader;
 ReactFileReader.defaultProps = {
   fileTypes: 'image/*',
   multipleImages: false,
-  outputFormat: 'original'
+  base64: false
 };
 
 ReactFileReader.propTypes = {
   multipleFiles: _react2.default.PropTypes.bool,
   handleFiles: _react2.default.PropTypes.func.isRequired,
-  fileTypes: _react2.default.PropTypes.string,
-  outputFormat: _react2.default.PropTypes.string,
+  fileTypes: _react2.default.PropTypes.bool,
+  base64: _react2.default.PropTypes.bool,
   children: _react2.default.PropTypes.element.isRequired
 };
