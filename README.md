@@ -1,4 +1,8 @@
 # React File Reader
+[![Build Status](https://travis-ci.org/GrillWork/react-file-reader.png?branch=master)](https://travis-ci.org/GrillWork/react-file-reader)
+
+[![NPM](https://nodei.co/npm/react-file-reader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-file-reader/)
+
 A flexible ReactJS component for handling file uploads with custom style inputs.
 
 ## Props
