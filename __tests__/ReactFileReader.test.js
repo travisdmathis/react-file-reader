@@ -1,14 +1,53 @@
 import React from 'react';
 import ReactFileReader from '../ReactFileReader';
-import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 
-test('the component renders', () => {
-  const component = renderer.create(
+test('the base component renders', () => {
+  const component = mount(
     <ReactFileReader elementId='test-render' handleFiles={() => ''}>
       <p>Upload</p>
     </ReactFileReader>
   );
 
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  expect(component).toMatchSnapshot();
+  expect(component.props().multipleFiles).toEqual(false)
+  expect(component.props().base64).toEqual(false)
+  expect(component.props().fileTypes).toEqual('image/*')
 });
+
+test('returns base64 image', () => {
+  const component = mount(
+    <ReactFileReader base64={true} elementId='test-render' handleFiles={() => ''}>
+      <p>Upload</p>
+    </ReactFileReader>
+  );
+
+  expect(component).toMatchSnapshot();
+  expect(component.props().base64).toEqual(true);
+});
+
+test('accepts multiple files', () => {
+  const component = mount(
+    <ReactFileReader multipleFiles={true} elementId='test-render' handleFiles={() => ''}>
+      <p>Upload</p>
+    </ReactFileReader>
+  );
+
+  expect(component).toMatchSnapshot();
+  expect(component.props().multipleFiles).toEqual(true)
+  expect(component.props().base64).toEqual(false)
+  expect(component.props().fileTypes).toEqual('image/*')
+});
+
+test('accepted file type should be csv', () => {
+  const component = mount(
+    <ReactFileReader fileTypes='.csv' elementId='test-render' handleFiles={() => ''}>
+      <p>Upload</p>
+    </ReactFileReader>
+  );
+
+  expect(component).toMatchSnapshot();
+  expect(component.props().multipleFiles).toEqual(false);
+  expect(component.props().base64).toEqual(false);
+  expect(component.props().fileTypes).toEqual('.csv');
+})

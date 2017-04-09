@@ -82,7 +82,7 @@ export default class ReactFileReader extends React.Component {
 
 ReactFileReader.defaultProps = {
   fileTypes: 'image/*',
-  multipleImages: false,
+  multipleFiles: false,
   base64: false,
 };
 

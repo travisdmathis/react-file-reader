@@ -1,32 +1,157 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the component renders 1`] = `
-<div
-  className="react-file-reader"
+exports[`accepted file type should be csv 1`] = `
+<ReactFileReader
+  base64={false}
+  elementId="test-render"
+  fileTypes=".csv"
+  handleFiles={[Function]}
+  multipleFiles={false}
 >
-  <input
-    accept="image/*"
-    className="react-file-reader-input"
-    id="test-render"
-    multiple={undefined}
-    onChange={[Function]}
-    style={
-      Object {
-        "left": "-99999999px",
-        "opacity": "0px",
-        "position": "fixed",
-        "width": "0px",
-      }
-    }
-    type="file"
-  />
   <div
-    className="react-file-reader-button"
-    onClick={[Function]}
+    className="react-file-reader"
   >
-    <p>
-      Upload
-    </p>
+    <input
+      accept=".csv"
+      className="react-file-reader-input"
+      id="test-render"
+      multiple={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "left": "-99999999px",
+          "opacity": "0px",
+          "position": "fixed",
+          "width": "0px",
+        }
+      }
+      type="file"
+    />
+    <div
+      className="react-file-reader-button"
+      onClick={[Function]}
+    >
+      <p>
+        Upload
+      </p>
+    </div>
   </div>
-</div>
+</ReactFileReader>
+`;
+
+exports[`should accept multiple files 1`] = `
+<ReactFileReader
+  base64={false}
+  elementId="test-render"
+  fileTypes="image/*"
+  handleFiles={[Function]}
+  multipleFiles={true}
+>
+  <div
+    className="react-file-reader"
+  >
+    <input
+      accept="image/*"
+      className="react-file-reader-input"
+      id="test-render"
+      multiple={true}
+      onChange={[Function]}
+      style={
+        Object {
+          "left": "-99999999px",
+          "opacity": "0px",
+          "position": "fixed",
+          "width": "0px",
+        }
+      }
+      type="file"
+    />
+    <div
+      className="react-file-reader-button"
+      onClick={[Function]}
+    >
+      <p>
+        Upload
+      </p>
+    </div>
+  </div>
+</ReactFileReader>
+`;
+
+exports[`should return base64 image 1`] = `
+<ReactFileReader
+  base64={true}
+  elementId="test-render"
+  fileTypes="image/*"
+  handleFiles={[Function]}
+  multipleFiles={false}
+>
+  <div
+    className="react-file-reader"
+  >
+    <input
+      accept="image/*"
+      className="react-file-reader-input"
+      id="test-render"
+      multiple={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "left": "-99999999px",
+          "opacity": "0px",
+          "position": "fixed",
+          "width": "0px",
+        }
+      }
+      type="file"
+    />
+    <div
+      className="react-file-reader-button"
+      onClick={[Function]}
+    >
+      <p>
+        Upload
+      </p>
+    </div>
+  </div>
+</ReactFileReader>
+`;
+
+exports[`the base component renders 1`] = `
+<ReactFileReader
+  base64={false}
+  elementId="test-render"
+  fileTypes="image/*"
+  handleFiles={[Function]}
+  multipleFiles={false}
+>
+  <div
+    className="react-file-reader"
+  >
+    <input
+      accept="image/*"
+      className="react-file-reader-input"
+      id="test-render"
+      multiple={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "left": "-99999999px",
+          "opacity": "0px",
+          "position": "fixed",
+          "width": "0px",
+        }
+      }
+      type="file"
+    />
+    <div
+      className="react-file-reader-button"
+      onClick={[Function]}
+    >
+      <p>
+        Upload
+      </p>
+    </div>
+  </div>
+</ReactFileReader>
 `;

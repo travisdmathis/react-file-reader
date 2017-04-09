@@ -8,23 +8,39 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.5.4",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
     "uuid4": "^1.0.0"
-  },
-  "scripts": {
-    "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
-    "prepublish": "npm run build",
-    "test": "jest"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-core": "^6.7.6",
+    "babel-jest": "^19.0.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.24.1",
+    "enzyme": "^2.8.0",
+    "enzyme-to-json": "^1.5.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.2",
-    "react-test-renderer": "^15.5.3"
+    "react": "15.4.2",
+    "react-addons-test-utils": "15.4.2",
+    "react-dom": "15.4.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
+    "prepublish": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy",
+      "^uuid/v4$": "<rootDir>/node_modules/uuid4"
+    }
   }
 }
