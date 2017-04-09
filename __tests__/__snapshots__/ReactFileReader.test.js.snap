@@ -7,7 +7,7 @@ exports[`the component renders 1`] = `
   <input
     accept="image/*"
     className="react-file-reader-input"
-    id="452c5f78-da74-4d6e-bc13-fcf46b622208"
+    id="test-render"
     multiple={undefined}
     onChange={[Function]}
     style={

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 test('the component renders', () => {
   const component = renderer.create(
-    <ReactFileReader handleFiles={() => ''}>
+    <ReactFileReader elementId='test-render' handleFiles={() => ''}>
       <p>Upload</p>
     </ReactFileReader>
   );

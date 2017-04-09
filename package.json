@@ -13,11 +13,9 @@
     "uuid4": "^1.0.0"
   },
   "scripts": {
-    "test": "jest"
-  },
-  "scripts": {
     "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "jest"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
