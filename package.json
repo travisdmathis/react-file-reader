@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
-    "prepublish": "yarn run build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
