@@ -5,6 +5,11 @@
 
 A flexible ReactJS component for handling file uploads with custom style inputs.
 
+## Install
+```
+npm install react-file-reader --save
+```
+
 ## Props
 ### Default Props
   - fileTypes: 'image/*'
