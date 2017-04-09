@@ -14,6 +14,10 @@ var _v = require('uuid/v4');
 
 var _v2 = _interopRequireDefault(_v);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -132,9 +136,9 @@ ReactFileReader.defaultProps = {
 };
 
 ReactFileReader.propTypes = {
-  multipleFiles: _react2.default.PropTypes.bool,
-  handleFiles: _react2.default.PropTypes.func.isRequired,
-  fileTypes: _react2.default.PropTypes.string,
-  base64: _react2.default.PropTypes.bool,
-  children: _react2.default.PropTypes.element.isRequired
+  multipleFiles: _propTypes2.default.bool,
+  handleFiles: _propTypes2.default.func.isRequired,
+  fileTypes: _propTypes2.default.string,
+  base64: _propTypes2.default.bool,
+  children: _propTypes2.default.element.isRequired
 };

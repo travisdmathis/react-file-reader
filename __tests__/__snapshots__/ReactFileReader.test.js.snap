@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the component renders 1`] = `
+<div
+  className="react-file-reader"
+>
+  <input
+    accept="image/*"
+    className="react-file-reader-input"
+    id="452c5f78-da74-4d6e-bc13-fcf46b622208"
+    multiple={undefined}
+    onChange={[Function]}
+    style={
+      Object {
+        "left": "-99999999px",
+        "opacity": "0px",
+        "position": "fixed",
+        "width": "0px",
+      }
+    }
+    type="file"
+  />
+  <div
+    className="react-file-reader-button"
+    onClick={[Function]}
+  >
+    <p>
+      Upload
+    </p>
+  </div>
+</div>
+`;

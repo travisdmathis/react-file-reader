@@ -1,5 +1,6 @@
 import React from 'react';
 import uuidV4 from 'uuid/v4';
+import PropTypes from 'prop-types';
 
 export default class ReactFileReader extends React.Component {
 
@@ -86,9 +87,9 @@ ReactFileReader.defaultProps = {
 };
 
 ReactFileReader.propTypes = {
-  multipleFiles: React.PropTypes.bool,
-  handleFiles: React.PropTypes.func.isRequired,
-  fileTypes: React.PropTypes.string,
-  base64: React.PropTypes.bool,
-  children: React.PropTypes.element.isRequired
+  multipleFiles: PropTypes.bool,
+  handleFiles: PropTypes.func.isRequired,
+  fileTypes: PropTypes.string,
+  base64: PropTypes.bool,
+  children: PropTypes.element.isRequired
 }
