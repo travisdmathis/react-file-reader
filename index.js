@@ -92,7 +92,7 @@ var ReactFileReader = function (_React$Component) {
   _createClass(ReactFileReader, [{
     key: 'render',
     value: function render() {
-      hideInput = {
+      var hideInput = {
         width: '0px',
         opacity: '0px',
         position: 'fixed',
