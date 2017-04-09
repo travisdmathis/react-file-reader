@@ -1,5 +1,5 @@
 import React from 'react';
-import uuidV4 from 'uuid/v4';
+import uuidV4 from 'uuid4';
 import PropTypes from 'prop-types';
 
 export default class ReactFileReader extends React.Component {

@@ -39,7 +39,7 @@ exports[`accepted file type should be csv 1`] = `
 </ReactFileReader>
 `;
 
-exports[`should accept multiple files 1`] = `
+exports[`accepts multiple files 1`] = `
 <ReactFileReader
   base64={false}
   elementId="test-render"
@@ -78,7 +78,7 @@ exports[`should accept multiple files 1`] = `
 </ReactFileReader>
 `;
 
-exports[`should return base64 image 1`] = `
+exports[`returns base64 image 1`] = `
 <ReactFileReader
   base64={true}
   elementId="test-render"

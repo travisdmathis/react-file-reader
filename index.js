@@ -10,9 +10,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _v = require('uuid/v4');
+var _uuid = require('uuid4');
 
-var _v2 = _interopRequireDefault(_v);
+var _uuid2 = _interopRequireDefault(_uuid);
 
 var _propTypes = require('prop-types');
 
@@ -41,7 +41,7 @@ var ReactFileReader = function (_React$Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ReactFileReader.__proto__ || Object.getPrototypeOf(ReactFileReader)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      elementId: _this.props.elementId || (0, _v2.default)()
+      elementId: _this.props.elementId || (0, _uuid2.default)()
     }, _this.clickInput = function () {
       var element = document.getElementById(_this.state.elementId);
 
