@@ -89,7 +89,7 @@ ReactFileReader.defaultProps = {
 ReactFileReader.propTypes = {
   multipleFiles: React.PropTypes.bool,
   handleFiles: React.PropTypes.func.isRequired,
-  fileTypes: React.PropTypes.bool,
+  fileTypes: React.PropTypes.string,
   base64: React.PropTypes.bool,
   children: React.PropTypes.element.isRequired
 }
