@@ -6,10 +6,6 @@
   "repository": "git@github.com:GrillWork/react-file-reader.git",
   "author": "Grillwork Inc",
   "license": "MIT",
-  "dependencies": {
-    "prop-types": "^15.5.4",
-    "uuid4": "^1.0.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-core": "^6.7.6",
@@ -25,7 +21,9 @@
     "jest": "^19.0.2",
     "react": "15.4.2",
     "react-addons-test-utils": "15.4.2",
-    "react-dom": "15.4.2"
+    "react-dom": "15.4.2",
+    "uuid4": "^1.0.0",
+    "prop-types": "^15.5.4"
   },
   "scripts": {
     "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
