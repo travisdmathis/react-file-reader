@@ -22,7 +22,6 @@
     "react": "15.4.2",
     "react-addons-test-utils": "15.4.2",
     "react-dom": "15.4.2",
-    "uuid4": "^1.0.0",
     "prop-types": "^15.5.4"
   },
   "scripts": {
@@ -40,5 +39,8 @@
       "^.+\\.(css|scss)$": "identity-obj-proxy",
       "^uuid/v4$": "<rootDir>/node_modules/uuid4"
     }
+  },
+  "dependencies": {
+    "uuid4": "^1.0.0"
   }
 }
