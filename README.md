@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/react-file-reader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-file-reader/)
 
-A flexible ReactJS component for handling file uploads with custom style inputs.
+A flexible ReactJS component for handling styled HTML file inputs.
 
 ## Install
 ```
