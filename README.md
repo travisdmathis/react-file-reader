@@ -12,6 +12,12 @@ A flexible ReactJS component for handling styled HTML file inputs.
 npm install react-file-reader --save
 ```
 
+## ChangeLog
+  - 1.0.1
+    - fixed issue w/ uuid4 being a devDependency
+  - 1.0.0
+    - initial release
+    
 ## Props
 ### Default Props
   - fileTypes: 'image/*'
