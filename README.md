@@ -25,7 +25,7 @@ npm install react-file-reader --save
 ### Optional Props
 - base64
   - a `boolean` to convert and return the files as a base64 string
-  - multipleFile selection will return an `array` of `base64` strings;
+  - multipleFile selection will return an `array` of `base64` strings
 - multipleFiles
   - a `boolean` enforce single file or multiple file selection
 - fileTypes
