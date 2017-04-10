@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/react-file-reader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-file-reader/)
 
-[LIVE DEMO](https://intense-castle-72320.herokuapp.com/)
+[LIVE DEMO](http://react-file-reader.herokuapp.com/)
 
 A flexible ReactJS component for handling styled HTML file inputs.
 
