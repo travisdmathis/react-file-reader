@@ -26,7 +26,7 @@ npm install react-file-reader --save
 
 ### Required Props
 - a child element/component
-  - pass in your customized button to represent your upload input
+  - pass in your customized element to represent your upload input
 - handleFiles
   - a function to handle the selected files from the HTML input
 
