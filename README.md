@@ -13,6 +13,8 @@ npm install react-file-reader --save
 ```
 
 ## ChangeLog
+  - 1.0.2
+    - fixed an issue w/ prop-types not being available
   - 1.0.1
     - fixed issue w/ uuid4 being a devDependency
   - 1.0.0
@@ -33,7 +35,7 @@ npm install react-file-reader --save
 ### Optional Props
 - elementId
   - set a `unique` element Id for the input element
-  - if this is not set, a random UUID is generated for each element on the page.
+  - if this is not set, a random UUID is generated for each input on the page.
 - base64
   - a `boolean` to convert and return the files as a base64 `string`
   - multipleFile selection will return an `array` of base64 `strings`

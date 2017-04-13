@@ -1,7 +1,7 @@
 {
   "name": "react-file-reader",
-  "version": "1.0.1",
-  "description": "React component for handling file uploads with a customizable input",
+  "version": "1.0.2",
+  "description": "A flexible ReactJS component for handling styled HTML file inputs.",
   "main": "index.js",
   "repository": "git@github.com:GrillWork/react-file-reader.git",
   "author": "Grillwork Inc",
@@ -21,8 +21,7 @@
     "jest": "^19.0.2",
     "react": "15.4.2",
     "react-addons-test-utils": "15.4.2",
-    "react-dom": "15.4.2",
-    "prop-types": "^15.5.4"
+    "react-dom": "15.4.2"
   },
   "scripts": {
     "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
@@ -41,6 +40,7 @@
     }
   },
   "dependencies": {
-    "uuid4": "^1.0.0"
+    "uuid4": "^1.0.0",
+    "prop-types": "^15.5.4"
   }
 }
