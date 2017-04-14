@@ -1,9 +1,8 @@
 # React File Reader
 [![Build Status](https://travis-ci.org/GrillWork/react-file-reader.png?branch=master)](https://travis-ci.org/GrillWork/react-file-reader)
+[![DAVID](https://david-dm.org/grillwork/react-file-reader.svg)](https://david-dm.org/grillwork/react-file-reader)
 
 [![NPM](https://nodei.co/npm/react-file-reader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-file-reader/)
-
-[![DAVID](https://david-dm.org/grillwork/react-file-reader.svg)](https://david-dm.org/grillwork/react-file-reader)
 
 [LIVE DEMO](http://react-file-reader.herokuapp.com/)
 
