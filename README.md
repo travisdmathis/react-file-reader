@@ -1,4 +1,6 @@
 # React File Reader
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/GrillWork/react-file-reader.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/GrillWork/react-file-reader.png?branch=master)](https://travis-ci.org/GrillWork/react-file-reader)
 [![DAVID](https://david-dm.org/grillwork/react-file-reader.svg)](https://david-dm.org/grillwork/react-file-reader)
 

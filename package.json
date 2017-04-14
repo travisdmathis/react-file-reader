@@ -19,9 +19,9 @@
     "enzyme-to-json": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.2",
-    "react": "15.4.2",
-    "react-addons-test-utils": "15.4.2",
-    "react-dom": "15.4.2"
+    "react": "15.5.4",
+    "react-addons-test-utils": "15.5.1",
+    "react-dom": "15.5.4"
   },
   "scripts": {
     "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
