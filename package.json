@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "uuid4": "^1.0.0",
-    "prop-types": "^15.5.4"
+    "prop-types": "^15.5.0"
   }
 }
