@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default class ReactFileReader extends React.Component {
 
   state = {
-    elementId: this.props.elementId || uuidV4(),
+    elementId: this.props.elementId || uuidV4()
   }
 
   clickInput = () => {
@@ -16,25 +16,26 @@ export default class ReactFileReader extends React.Component {
 
   handleFiles = (event) => {
     if(this.props.base64) {
-      this.convertFilesToBase64(event.target.files)
+      this.convertFilesToBase64(event.target.files);
     } else {
-      this.props.handleFiles(event.target.files)
+      this.props.handleFiles(event.target.files);
     }
   }
 
   convertFilesToBase64 = (files) => {
-    let ef = files
+    let ef = files;
 
     if (this.props.multipleFiles) {
-      let files = [];
+      let files = { base64: [], fileList: ef };
+
       for (var i = 0, len = ef.length; i < len; i++) {
         let reader = new FileReader();
         let f = ef[i];
 
         reader.onloadend = e => {
-          files.push(reader.result)
+          files.base64.push(reader.result);
 
-          if (files.length === ef.length) {
+          if (files.base64.length === ef.length) {
             this.props.handleFiles(files);
           }
         }
@@ -42,14 +43,16 @@ export default class ReactFileReader extends React.Component {
         reader.readAsDataURL(f);
       }
     } else {
-      let f = files[0];
+      let files = { base64: '', fileList: ef };
+      let f = ef[0];
       let reader = new FileReader();
 
-      reader.onloadend = function (e) {
-        this.props.handleFiles(reader.result)
-      }.bind(this)
+      reader.onloadend = e => {
+        files.base64 = reader.result;
+        this.props.handleFiles(files);
+      }
 
-      reader.readAsDataURL(f)
+      reader.readAsDataURL(f);
     }
   }
 
@@ -58,7 +61,7 @@ export default class ReactFileReader extends React.Component {
       width: '0px',
       opacity: '0px',
       position: 'fixed',
-      left: '-99999999px',
+      left: '-99999999px'
     }
 
     return(
@@ -92,4 +95,4 @@ ReactFileReader.propTypes = {
   fileTypes: PropTypes.string,
   base64: PropTypes.bool,
   children: PropTypes.element.isRequired
-}
+};

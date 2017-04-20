@@ -14,6 +14,8 @@ npm install react-file-reader --save
 ```
 
 ## ChangeLog
+  - 1.1.0
+    - adds the ability to return both base64 strings and an HTML5 FileList from handleFiles
   - 1.0.3
     - bumps React version to 15.5 and fixes UNMET peer dependency with webpack
   - 1.0.2
@@ -69,6 +71,10 @@ handleFiles = files => {
 
 ### Base64
 ```javascript
+handleFiles = (files) => {
+  console.log(files.base64)
+}
+
 <ReactFileReader base64={true} multipleFiles={true} handleFiles={this.handleFiles}>
   <button className='btn'>Upload</button>
 </ReactFileReader>
@@ -85,5 +91,12 @@ handleFiles = files => {
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..."
 ```
 
+###### Access HTML5 FileList with base64={true}
+```
+handleFiles = (files) => {
+  console.log(files.fileList)
+}
+```
+
 ## Copyright
-Copyright (c)2017 [Grillwork Inc](http://grillwork.io). See [LICENSE](https://github.com/GrillWork/react-file-reader/blob/master/LICENSE) for details.
+Copyright (c)2017 [Grillwork Inc](http://grillwork.surge.sh). See [LICENSE](https://github.com/GrillWork/react-file-reader/blob/master/LICENSE) for details.

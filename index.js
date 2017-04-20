@@ -59,16 +59,16 @@ var ReactFileReader = function (_React$Component) {
         var i, len;
 
         (function () {
-          var files = [];
+          var files = { base64: [], fileList: ef };
 
           var _loop = function _loop() {
             var reader = new FileReader();
             var f = ef[i];
 
             reader.onloadend = function (e) {
-              files.push(reader.result);
+              files.base64.push(reader.result);
 
-              if (files.length === ef.length) {
+              if (files.base64.length === ef.length) {
                 _this.props.handleFiles(files);
               }
             };
@@ -81,12 +81,14 @@ var ReactFileReader = function (_React$Component) {
           }
         })();
       } else {
-        var f = files[0];
+        var _files = { base64: '', fileList: ef };
+        var f = ef[0];
         var _reader = new FileReader();
 
         _reader.onloadend = function (e) {
-          this.props.handleFiles(_reader.result);
-        }.bind(_this);
+          _files.base64 = _reader.result;
+          _this.props.handleFiles(_files);
+        };
 
         _reader.readAsDataURL(f);
       }
