@@ -14,6 +14,8 @@ npm install react-file-reader --save
 ```
 
 ## ChangeLog
+  - 1.0.3
+    - bumps React version to 15.5 and fixes UNMET peer dependency with webpack
   - 1.0.2
     - fixed an issue w/ prop-types not being available
   - 1.0.1
