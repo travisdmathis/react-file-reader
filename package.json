@@ -15,13 +15,15 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.24.1",
+    "create-react-class": "^15.5.0",
     "enzyme": "^2.8.0",
     "enzyme-to-json": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.2",
-    "react": "15.4.2",
-    "react-addons-test-utils": "15.4.2",
-    "react-dom": "15.4.2"
+    "react": "^15.5.0",
+    "react-addons-test-utils": "^15.5.0",
+    "react-dom": "^15.5.0",
+    "webpack": "^2.4.1"
   },
   "scripts": {
     "build": "./node_modules/.bin/babel ReactFileReader.js -o index.js",
