@@ -69,7 +69,7 @@ var ReactFileReader = function (_React$Component) {
               files.push(reader.result);
 
               if (files.length === ef.length) {
-                _this.props.handleFiles(files);
+                _this.props.handleFiles(files, ef);
               }
             };
 
@@ -85,7 +85,7 @@ var ReactFileReader = function (_React$Component) {
         var _reader = new FileReader();
 
         _reader.onloadend = function (e) {
-          this.props.handleFiles(_reader.result);
+          this.props.handleFiles(_reader.result, ef);
         }.bind(_this);
 
         _reader.readAsDataURL(f);
