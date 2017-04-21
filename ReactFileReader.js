@@ -35,7 +35,7 @@ export default class ReactFileReader extends React.Component {
           files.push(reader.result)
 
           if (files.length === ef.length) {
-            this.props.handleFiles(files, ef);
+            this.props.handleFiles(files);
           }
         }
 
@@ -46,7 +46,7 @@ export default class ReactFileReader extends React.Component {
       let reader = new FileReader();
 
       reader.onloadend = function (e) {
-        this.props.handleFiles(reader.result, ef)
+        this.props.handleFiles(reader.result)
       }.bind(this)
 
       reader.readAsDataURL(f)
