@@ -70,6 +70,8 @@ handleFiles = files => {
 [HTML5 FileList](https://developer.mozilla.org/en-US/docs/Web/API/FileList)
 
 ### Base64
+When base64 is true, React File Reader returns a JS Object including both the base64 files and the HTML5 FileList. You can access their values at Object.base64 or Object.fileList
+
 ```javascript
 handleFiles = (files) => {
   console.log(files.base64)
@@ -81,6 +83,7 @@ handleFiles = (files) => {
 ```
 
 #### Response
+
 ###### multipleFiles={true}
 ```
 ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA", "data:image/png;base64,i..."]
@@ -99,4 +102,4 @@ handleFiles = (files) => {
 ```
 
 ## Copyright
-Copyright (c)2017 [Grillwork Inc](http://grillwork.surge.sh). See [LICENSE](https://github.com/GrillWork/react-file-reader/blob/master/LICENSE) for details.
+Copyright (c)2017 [Grillwork Inc](http://grillwork.io). See [LICENSE](https://github.com/GrillWork/react-file-reader/blob/master/LICENSE) for details.
