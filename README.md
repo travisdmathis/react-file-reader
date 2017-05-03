@@ -8,6 +8,8 @@
 
 A flexible ReactJS component for handling styled HTML file inputs.
 
+Maintained by the team @ [Grillwork](http://www.grillwork.io)
+
 ## Install
 ```
 npm install react-file-reader --save
