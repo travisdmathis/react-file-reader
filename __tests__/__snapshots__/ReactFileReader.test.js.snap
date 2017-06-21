@@ -19,8 +19,7 @@ exports[`accepted file type should be csv 1`] = `
       onChange={[Function]}
       style={
         Object {
-          "left": "-99999999px",
-          "opacity": "0px",
+          "opacity": "0",
           "position": "fixed",
           "width": "0px",
         }
@@ -58,8 +57,7 @@ exports[`accepts multiple files 1`] = `
       onChange={[Function]}
       style={
         Object {
-          "left": "-99999999px",
-          "opacity": "0px",
+          "opacity": "0",
           "position": "fixed",
           "width": "0px",
         }
@@ -97,8 +95,7 @@ exports[`returns base64 image 1`] = `
       onChange={[Function]}
       style={
         Object {
-          "left": "-99999999px",
-          "opacity": "0px",
+          "opacity": "0",
           "position": "fixed",
           "width": "0px",
         }
@@ -136,8 +133,7 @@ exports[`the base component renders 1`] = `
       onChange={[Function]}
       style={
         Object {
-          "left": "-99999999px",
-          "opacity": "0px",
+          "opacity": "0",
           "position": "fixed",
           "width": "0px",
         }
