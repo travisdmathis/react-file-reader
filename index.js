@@ -100,9 +100,8 @@ var ReactFileReader = function (_React$Component) {
     value: function render() {
       var hideInput = {
         width: '0px',
-        opacity: '0px',
-        position: 'fixed',
-        left: '-99999999px'
+        opacity: '0',
+        position: 'fixed'
       };
 
       return _react2.default.createElement(

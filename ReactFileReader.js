@@ -59,9 +59,8 @@ export default class ReactFileReader extends React.Component {
   render() {
     var hideInput = {
       width: '0px',
-      opacity: '0px',
+      opacity: '0',
       position: 'fixed',
-      left: '-99999999px'
     }
 
     return(
