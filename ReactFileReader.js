@@ -10,7 +10,7 @@ export default class ReactFileReader extends React.Component {
 
   clickInput = () => {
     let element = document.getElementById(this.state.elementId);
-
+    element.value = '';
     element.click();
   }
 

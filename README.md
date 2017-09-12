@@ -14,6 +14,10 @@ npm install react-file-reader --save
 ```
 
 ## ChangeLog
+  - 1.1.2
+    - fixes an issue where a file couldn't be uploaded twice
+  - 1.1.1
+    - changes the way we're hiding the input, as previously it would break parent elements that were positioned absolutely.
   - 1.1.0
     - adds the ability to return both base64 strings and an HTML5 FileList from handleFiles
   - 1.0.3
