@@ -44,7 +44,7 @@ var ReactFileReader = function (_React$Component) {
       elementId: _this.props.elementId || (0, _uuid2.default)()
     }, _this.clickInput = function () {
       var element = document.getElementById(_this.state.elementId);
-      // element.value = '';
+      element.value = '';
       element.click();
     }, _this.handleFiles = function (event) {
       if (_this.props.base64) {
