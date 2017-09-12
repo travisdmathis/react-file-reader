@@ -15,7 +15,7 @@ npm install react-file-reader --save
 
 ## ChangeLog
   - 1.1.2
-    - fixes an issue where a file couldn't be uploaded twice
+    - fixes an issue where the same file couldn't be selected twice in a row
   - 1.1.1
     - changes the way we're hiding the input, as previously it would break parent elements that were positioned absolutely.
   - 1.1.0
