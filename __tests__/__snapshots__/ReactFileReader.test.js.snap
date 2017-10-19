@@ -38,6 +38,49 @@ exports[`accepted file type should be csv 1`] = `
 </ReactFileReader>
 `;
 
+exports[`accepted file type should be csv or image/* 1`] = `
+<ReactFileReader
+  base64={false}
+  elementId="test-render"
+  fileTypes={
+    Array [
+      ".csv",
+      "image/*",
+    ]
+  }
+  handleFiles={[Function]}
+  multipleFiles={false}
+>
+  <div
+    className="react-file-reader"
+  >
+    <input
+      accept=".csv,image/*"
+      className="react-file-reader-input"
+      id="test-render"
+      multiple={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "opacity": "0",
+          "position": "fixed",
+          "width": "0px",
+        }
+      }
+      type="file"
+    />
+    <div
+      className="react-file-reader-button"
+      onClick={[Function]}
+    >
+      <p>
+        Upload
+      </p>
+    </div>
+  </div>
+</ReactFileReader>
+`;
+
 exports[`accepts multiple files 1`] = `
 <ReactFileReader
   base64={false}

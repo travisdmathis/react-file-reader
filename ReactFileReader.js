@@ -67,7 +67,7 @@ export default class ReactFileReader extends React.Component {
       <div className='react-file-reader'>
         <input type='file'
           onChange={this.handleFiles}
-          accept={this.props.fileTypes}
+          accept={Array.isArray(this.props.fileTypes) ? this.props.fileTypes.join(',') : this.props.fileTypes}
           className='react-file-reader-input'
           id={this.state.elementId}
           multiple={this.props.multipleFiles}
@@ -91,7 +91,10 @@ ReactFileReader.defaultProps = {
 ReactFileReader.propTypes = {
   multipleFiles: PropTypes.bool,
   handleFiles: PropTypes.func.isRequired,
-  fileTypes: PropTypes.string,
+  fileTypes: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+  ]),
   base64: PropTypes.bool,
   children: PropTypes.element.isRequired
 };
