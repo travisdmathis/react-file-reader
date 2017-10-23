@@ -51,3 +51,16 @@ test('accepted file type should be csv', () => {
   expect(component.props().base64).toEqual(false);
   expect(component.props().fileTypes).toEqual('.csv');
 })
+
+test('accepted file type should be csv or image/*', () => {
+  const component = mount(
+    <ReactFileReader fileTypes={['.csv', 'image/*']} elementId='test-render' handleFiles={() => ''}>
+      <p>Upload</p>
+    </ReactFileReader>
+  );
+
+  expect(component).toMatchSnapshot();
+  expect(component.props().multipleFiles).toEqual(false);
+  expect(component.props().base64).toEqual(false);
+  expect(component.props().fileTypes).toEqual([".csv", "image/*"]);
+})

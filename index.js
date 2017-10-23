@@ -109,7 +109,7 @@ var ReactFileReader = function (_React$Component) {
         { className: 'react-file-reader' },
         _react2.default.createElement('input', { type: 'file',
           onChange: this.handleFiles,
-          accept: this.props.fileTypes,
+          accept: Array.isArray(this.props.fileTypes) ? this.props.fileTypes.join(',') : this.props.fileTypes,
           className: 'react-file-reader-input',
           id: this.state.elementId,
           multiple: this.props.multipleFiles,
@@ -139,7 +139,7 @@ ReactFileReader.defaultProps = {
 ReactFileReader.propTypes = {
   multipleFiles: _propTypes2.default.bool,
   handleFiles: _propTypes2.default.func.isRequired,
-  fileTypes: _propTypes2.default.string,
+  fileTypes: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.array]),
   base64: _propTypes2.default.bool,
   children: _propTypes2.default.element.isRequired
 };
