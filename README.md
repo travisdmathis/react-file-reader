@@ -14,8 +14,10 @@ npm install react-file-reader --save
 ```
 
 ## ChangeLog
+  - 1.1.3
+    - adds the ability to accept multiple fileTypes as an array
   - 1.1.2
-    - fixes an issue where a file couldn't be uploaded twice
+    - fixes an issue where the same file couldn't be selected twice in a row
   - 1.1.1
     - changes the way we're hiding the input, as previously it would break parent elements that were positioned absolutely.
   - 1.1.0
@@ -31,7 +33,7 @@ npm install react-file-reader --save
 
 ## Props
 ### Default Props
-  - fileTypes: 'image/*'
+  - fileTypes: 'image/\*'
   - multipleFiles: false
   - base64: false
 
@@ -52,6 +54,7 @@ npm install react-file-reader --save
   - a `boolean` enforce single file or multiple file selection
 - fileTypes
   - React File Reader supports all [HTML input accept attributes](https://www.w3schools.com/tags/att_input_accept.asp).
+  - Can be passed as a string or an array
 
 ## Usage
 ### Import React File Reader
@@ -81,7 +84,7 @@ handleFiles = (files) => {
   console.log(files.base64)
 }
 
-<ReactFileReader base64={true} multipleFiles={true} handleFiles={this.handleFiles}>
+<ReactFileReader fileTypes={[".csv",".zip"]} base64={true} multipleFiles={true} handleFiles={this.handleFiles}>
   <button className='btn'>Upload</button>
 </ReactFileReader>
 ```
