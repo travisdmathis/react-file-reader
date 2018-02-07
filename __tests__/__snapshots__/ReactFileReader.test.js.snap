@@ -3,6 +3,7 @@
 exports[`accepted file type should be csv 1`] = `
 <ReactFileReader
   base64={false}
+  disabled={false}
   elementId="test-render"
   fileTypes=".csv"
   handleFiles={[Function]}
@@ -14,6 +15,7 @@ exports[`accepted file type should be csv 1`] = `
     <input
       accept=".csv"
       className="react-file-reader-input"
+      disabled={false}
       id="test-render"
       multiple={false}
       onChange={[Function]}
@@ -41,6 +43,7 @@ exports[`accepted file type should be csv 1`] = `
 exports[`accepted file type should be csv or image/* 1`] = `
 <ReactFileReader
   base64={false}
+  disabled={false}
   elementId="test-render"
   fileTypes={
     Array [
@@ -57,6 +60,7 @@ exports[`accepted file type should be csv or image/* 1`] = `
     <input
       accept=".csv,image/*"
       className="react-file-reader-input"
+      disabled={false}
       id="test-render"
       multiple={false}
       onChange={[Function]}
@@ -84,6 +88,7 @@ exports[`accepted file type should be csv or image/* 1`] = `
 exports[`accepts multiple files 1`] = `
 <ReactFileReader
   base64={false}
+  disabled={false}
   elementId="test-render"
   fileTypes="image/*"
   handleFiles={[Function]}
@@ -95,6 +100,7 @@ exports[`accepts multiple files 1`] = `
     <input
       accept="image/*"
       className="react-file-reader-input"
+      disabled={false}
       id="test-render"
       multiple={true}
       onChange={[Function]}
@@ -122,6 +128,7 @@ exports[`accepts multiple files 1`] = `
 exports[`returns base64 image 1`] = `
 <ReactFileReader
   base64={true}
+  disabled={false}
   elementId="test-render"
   fileTypes="image/*"
   handleFiles={[Function]}
@@ -133,6 +140,7 @@ exports[`returns base64 image 1`] = `
     <input
       accept="image/*"
       className="react-file-reader-input"
+      disabled={false}
       id="test-render"
       multiple={false}
       onChange={[Function]}
@@ -160,6 +168,7 @@ exports[`returns base64 image 1`] = `
 exports[`the base component renders 1`] = `
 <ReactFileReader
   base64={false}
+  disabled={false}
   elementId="test-render"
   fileTypes="image/*"
   handleFiles={[Function]}
@@ -171,6 +180,7 @@ exports[`the base component renders 1`] = `
     <input
       accept="image/*"
       className="react-file-reader-input"
+      disabled={false}
       id="test-render"
       multiple={false}
       onChange={[Function]}
