@@ -134,7 +134,8 @@ exports.default = ReactFileReader;
 ReactFileReader.defaultProps = {
   fileTypes: 'image/*',
   multipleFiles: false,
-  base64: false
+  base64: false,
+  disabled: false
 };
 
 ReactFileReader.propTypes = {
