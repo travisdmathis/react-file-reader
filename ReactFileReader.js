@@ -63,8 +63,13 @@ export default class ReactFileReader extends React.Component {
       position: 'fixed',
     }
 
+    var classNames = ['react-file-reader'];
+    if(this.props.className){
+      classNames.push(this.props.className);
+    }
+
     return(
-      <div className='react-file-reader'>
+      <div className={classNames.join(' ')}>
         <input type='file'
           onChange={this.handleFiles}
           accept={Array.isArray(this.props.fileTypes) ? this.props.fileTypes.join(',') : this.props.fileTypes}
