@@ -113,7 +113,8 @@ var ReactFileReader = function (_React$Component) {
           className: 'react-file-reader-input',
           id: this.state.elementId,
           multiple: this.props.multipleFiles,
-          style: hideInput
+          style: hideInput,
+          disabled: this.props.disabled
         }),
         _react2.default.createElement(
           'div',
@@ -141,5 +142,6 @@ ReactFileReader.propTypes = {
   handleFiles: _propTypes2.default.func.isRequired,
   fileTypes: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.array]),
   base64: _propTypes2.default.bool,
-  children: _propTypes2.default.element.isRequired
+  children: _propTypes2.default.element.isRequired,
+  disabled: _propTypes2.default.bool
 };

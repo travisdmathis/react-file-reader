@@ -72,6 +72,7 @@ export default class ReactFileReader extends React.Component {
           id={this.state.elementId}
           multiple={this.props.multipleFiles}
           style={hideInput}
+          disabled={this.props.disabled}
         />
 
         <div className='react-file-reader-button' onClick={this.clickInput}>
@@ -86,6 +87,7 @@ ReactFileReader.defaultProps = {
   fileTypes: 'image/*',
   multipleFiles: false,
   base64: false,
+  disabled: false,
 };
 
 ReactFileReader.propTypes = {
@@ -96,5 +98,6 @@ ReactFileReader.propTypes = {
     PropTypes.array,
   ]),
   base64: PropTypes.bool,
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
+  disabled: PropTypes.bool
 };
