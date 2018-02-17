@@ -14,6 +14,8 @@ npm install react-file-reader --save
 ```
 
 ## ChangeLog
+  - 1.1.4
+    - adds disabled prop for input
   - 1.1.3
     - adds the ability to accept multiple fileTypes as an array
   - 1.1.2
@@ -55,6 +57,8 @@ npm install react-file-reader --save
 - fileTypes
   - React File Reader supports all [HTML input accept attributes](https://www.w3schools.com/tags/att_input_accept.asp).
   - Can be passed as a string or an array
+- disabled
+  - disable input
 
 ## Usage
 ### Import React File Reader

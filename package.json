@@ -1,6 +1,6 @@
 {
   "name": "react-file-reader",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A flexible ReactJS component for handling styled HTML file inputs.",
   "main": "index.js",
   "repository": "git@github.com:GrillWork/react-file-reader.git",
