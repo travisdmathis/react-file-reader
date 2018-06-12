@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class ReactFileReader extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   fileInput = null;
 
   setFileInput = element => {
