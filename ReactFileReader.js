@@ -1,15 +1,14 @@
 import React from 'react';
-import uuidV4 from 'uuid4';
 import PropTypes from 'prop-types';
 
 export default class ReactFileReader extends React.Component {
-
-  state = {
-    elementId: this.props.elementId || uuidV4()
+  constructor(props) {
+    super(props);
+    this.fileInput = React.createRef();
   }
 
   clickInput = () => {
-    let element = document.getElementById(this.state.elementId);
+    const element = this.fileInput.current;
     element.value = '';
     element.click();
   }
@@ -69,7 +68,7 @@ export default class ReactFileReader extends React.Component {
           onChange={this.handleFiles}
           accept={Array.isArray(this.props.fileTypes) ? this.props.fileTypes.join(',') : this.props.fileTypes}
           className='react-file-reader-input'
-          id={this.state.elementId}
+          ref={this.fileInput}
           multiple={this.props.multipleFiles}
           style={hideInput}
           disabled={this.props.disabled}

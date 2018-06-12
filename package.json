@@ -38,11 +38,9 @@
     ],
     "moduleNameMapper": {
       "^.+\\.(css|scss)$": "identity-obj-proxy",
-      "^uuid/v4$": "<rootDir>/node_modules/uuid4"
     }
   },
   "dependencies": {
-    "uuid4": "^1.0.0",
     "prop-types": "^15.5.0"
   }
 }
