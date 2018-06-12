@@ -4,11 +4,16 @@ import PropTypes from 'prop-types';
 export default class ReactFileReader extends React.Component {
   constructor(props) {
     super(props);
-    this.fileInput = React.createRef();
+  }
+
+  fileInput = null;
+
+  setFileInput = element => {
+    this.fileInput = element;
   }
 
   clickInput = () => {
-    const element = this.fileInput.current;
+    const element = this.fileInput;
     element.value = '';
     element.click();
   }
@@ -68,7 +73,7 @@ export default class ReactFileReader extends React.Component {
           onChange={this.handleFiles}
           accept={Array.isArray(this.props.fileTypes) ? this.props.fileTypes.join(',') : this.props.fileTypes}
           className='react-file-reader-input'
-          ref={this.fileInput}
+          ref={this.setFileInput}
           multiple={this.props.multipleFiles}
           style={hideInput}
           disabled={this.props.disabled}
