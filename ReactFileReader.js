@@ -15,6 +15,10 @@ export default class ReactFileReader extends React.Component {
   }
 
   handleFiles = (event) => {
+    if(this.props.onStart !== undefined) {
+      this.props.onStart();
+    }
+
     if(this.props.base64) {
       this.convertFilesToBase64(event.target.files);
     } else {
@@ -107,4 +111,5 @@ ReactFileReader.propTypes = {
   children: PropTypes.element.isRequired,
   disabled: PropTypes.bool,
   elementId: PropTypes.string,
+  onStart: PropTypes.func,
 };
