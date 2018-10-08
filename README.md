@@ -1,3 +1,7 @@
+# THIS LIBRARY HAS BEEN DEPRECATED - IF YOU WOULD LIKE TO MOVE THE PROJECT FORWARD FORK IT AND CARRY ON! I just don't have time to maintain without any help, as I no longer run this business as a full time job.
+
+# THIS REPO IS NO LONGER MAINTAINED AND IS HERE ONLY FOR PRESERVATION AND PORTFOLIO PURPOSES
+
 # React File Reader
 [![Build Status](https://travis-ci.org/GrillWork/react-file-reader.png?branch=master)](https://travis-ci.org/GrillWork/react-file-reader)
 [![DAVID](https://david-dm.org/grillwork/react-file-reader.svg)](https://david-dm.org/grillwork/react-file-reader)
